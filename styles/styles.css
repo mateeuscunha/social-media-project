@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+@media (max-width: 768px) {
+    section#celular {
+        height: 500px;
+        width: 250px;
+    }
+    
+    iframe#tela {
+        width: 214px;
+        height: 375px;
+        top: 64px;
+        left: 18px;
+    }
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -16,6 +30,11 @@ body {
     background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex; /*linha do deepseek*/
+    justify-content: center; /*linha do deepseek*/
+    align-items: center; /*linha do deepseek*/
+    min-height: 100vh; /*linha do deepseek*/
+    overflow: hidden; /*linha do deepseek*/
 }
 
 main {
@@ -29,8 +48,17 @@ section#celular {
     left: 50%; /*porém, se eu fizer só top e left 50% ele posiciona o ponto superior esquerdo no centro, então, preciso do transform*/
     transform: translate(-50%, -50%); /*menos metade pra direita, menos metade pra cima*/
 
-    height: 100vh;
-    width: 100vw;
-    background: url('../imagens/frame-iphone.png') no-repeat top center;
+    height: 627px;
+    width: 311px;
+    background: url('../imagens/frame-iphone.png') no-repeat center center;
     background-size: contain;
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+    border-radius: 2px;
 }
