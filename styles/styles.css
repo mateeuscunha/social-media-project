@@ -62,3 +62,25 @@ iframe#tela {
     height: 471px;
     border-radius: 2px;
 }
+
+section#redes-sociais {
+    text-align: right;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box; /*colocando isso, a borda faz parte da caixa, e não é algo exterior*/
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.6); /*fica bom, por conta do box-sizing colocado*/
+    transform: translate(-3px, -3px); /*pra esquerda e pra cima, por isso negativo*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.40); /*aumentar a sombra porque mexeu*/
+    transition: transform .33s, border .2s; /*para que a transição ocorra de forma suave*/
+}
