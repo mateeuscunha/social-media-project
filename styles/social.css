@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 0; /* Remove o espaço entre elementos inline */
 }
 
 ::-webkit-scrollbar { /*esconder a barra de rolagem*/
@@ -13,7 +14,6 @@
 
 img {
     width: 100vw;
-    margin: 0px;
 }
 
 a {
